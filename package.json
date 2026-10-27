@@ -1,0 +1,31 @@
+{
+  "name": "rgti-game-framework",
+  "version": "1.0.0",
+  "description": "WebGPU game development framework for Computer Graphics courses",
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.seclab.si:lgm/rgti/rgti-game-framework.git"
+  },
+  "license": "MIT",
+  "author": "Gorazd, Katarina, Uroš",
+  "type": "module",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "serve -l 3000 .",
+    "dev": "vite",
+    "updates": "ncu",
+    "update": "ncu --interactive"
+  },
+  "devDependencies": {
+    "@webgpu/types": "^0.1.74",
+    "concurrently": "^10.0.6",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.4",
+    "serve": "^14.2.6",
+    "vite": "^8.3.5"
+  }
+}

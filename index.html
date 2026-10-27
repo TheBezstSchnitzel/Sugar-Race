@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Game</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      canvas {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script type="importmap">
+      {
+        "imports": {
+          "gl-matrix": "/node_modules/gl-matrix/esm/index.js"
+        }
+      }
+    </script>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
